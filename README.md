@@ -25,12 +25,16 @@ The subaccount is optional, and represented in hex format with leading 0's trimm
 # These are all the same
 principal
 principal:00 # is the same as principal (leading 0s are trimmed)
-principal: # this would still format correctly
+principal:0 # this would be valid
+principal: # this would still format correctly (default null/0 subaccount)
 ```
 
 # Known protocols
-Some known protocols can be registered to allow for more friendly addresses. For example, the protocol `volt` is regsitered to the canisterId `[todo]`. Because Volt is a cansiter based account protocol, each user is assigned a subaccount linked to their principal (in fact it's their principal represented in hex format). So these addresses could look like:
+Some known protocols can be registered to allow for more friendly addresses. For example, the protocol `volt` is regsitered to the canisterId `aclt4-uaaaa-aaaak-qb4zq-cai`. Because Volt is a cansiter based account protocol, each user is assigned a subaccount linked to their principal (in fact it's their principal represented in hex format). So these addresses could look like:
 ```
-volt:283ecaff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da05a6f94
+# these are the same
+volt:ff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da05a6f94
+aclt4-uaaaa-aaaak-qb4zq-cai:ff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da05a6f94
+aclt4-uaaaa-aaaak-qb4zq-cai:000000ff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da05a6f94
 ```
 
