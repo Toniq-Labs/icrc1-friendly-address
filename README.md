@@ -38,7 +38,7 @@ aclt4-uaaaa-aaaak-qb4zq-cai:ff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da0
 aclt4-uaaaa-aaaak-qb4zq-cai:000000ff5fd8481ed2ee81e418b69168165697521b42257ab3ab468da05a6f94
 ```
 
-#Implementation
+# Implementation
 Here is a basic JS implementation to convert an address in this format to a valid JS Candid `Account` object.
 ```
 const Principal = require("@dfinity/principal").Principal;
